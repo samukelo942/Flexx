@@ -1,38 +1,36 @@
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* GLOBAL */
 body {
     font-family: "Poppins", sans-serif;
-    background: #0f172a;
-    color: #f1f5f9;
-    line-height: 1.6;
+    background-color: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.7;
 }
 
-/* Header */
+/* HEADER */
 header {
-    width: 100%;
+    background: #020617;
     padding: 20px;
-    background: #1e293b;
-    text-align: center;
-    color: #f1f5f9;
     position: fixed;
+    width: 100%;
     top: 0;
-    left: 0;
     z-index: 1000;
+    text-align: center;
 }
 
 header h1 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 600;
     color: #14b8a6;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-/* Dropdown Navigation */
+/* DROPDOWN */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -40,59 +38,157 @@ header h1 {
 
 .dropbtn {
     background: #14b8a6;
-    color: #fff;
-    padding: 10px 18px;
-    font-size: 16px;
+    color: #020617;
+    padding: 10px 20px;
     border: none;
+    font-size: 15px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 6px;
-}
-
-.dropbtn i {
-    margin-left: 5px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
-    background: #1e293b;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
+    background: #020617;
+    min-width: 170px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .dropdown-content a {
-    color: #f1f5f9;
-    padding: 12px 16px;
-    text-decoration: none;
     display: block;
-    text-align: left;
+    padding: 12px 15px;
+    color: #e5e7eb;
+    text-decoration: none;
 }
 
 .dropdown-content a:hover {
     background: #14b8a6;
+    color: #020617;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Hero Section */
+/* HERO */
 .hero {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 150px 10% 60px;
+    gap: 50px;
+    padding: 140px 10% 80px;
     min-height: 100vh;
-    background: linear-gradient(to right, #0f172a 50%, #1e293b 50%);
+    align-items: center;
 }
 
-.hero .text {
-    flex: 1;
-    padding-right: 40px;
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
+.hero h2 span {
+    color: #14b8a6;
+}
+
+.hero h3 {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 520px;
+    color: #cbd5e1;
+}
+
+.socials a {
+    margin-right: 15px;
+    font-size: 22px;
+    color: #94a3b8;
+}
+
+.socials a:hover {
+    color: #14b8a6;
+}
+
+/* PHOTO */
+.photo img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 5px solid #14b8a6;
+    object-fit: cover;
+}
+
+/* SECTIONS */
+.section {
+    padding: 100px 10%;
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #14b8a6;
+    margin-bottom: 20px;
+}
+
+/* FORMS */
+.form {
+    max-width: 420px;
+    background: #020617;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #0f172a;
+    color: #e5e7eb;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: 2px solid #14b8a6;
+}
+
+/* BUTTON */
+.form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #14b8a6;
+    color: #020617;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #2dd4bf;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero p {
+        margin: auto;
+    }
+}
 .hero .text h2 {
     font-size: 34px;
     font-weight: 700;
@@ -140,4 +236,5 @@ header h1 {
     border: 6px solid #14b8a6;
     object-fit: cover;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
 }
