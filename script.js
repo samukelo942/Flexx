@@ -3,32 +3,15 @@ window.onload = function () {
     console.log("Welcome to Samukelo Ngubane's Portfolio Website!");
 };
 
-// Registration form validation
-document.querySelector("#registration .form").addEventListener("submit", function (event) {
-
-    let name = document.getElementById("fullname").value;
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-
-    if (name === "" || email === "" || password === "") {
-        alert("Please fill in all registration fields.");
-        event.preventDefault();
-    } else if (password.length < 6) {
-        alert("Password must be at least 6 characters long.");
-        event.preventDefault();
-    } else {
-        alert("Registration successful!");
-    }
-});
-
 
 // Contact form validation
 document.querySelector("#contact .form").addEventListener("submit", function (event) {
 
     let name = document.getElementById("name").value;
-    let message = document.getElementById("message").value;
+    let email = document.getElementById("email").value;
+    let github = document.getElementById("Github ").value;
 
-    if (name === "" || message === "") {
+    if (name === "" || email === "" || github === "") {
         alert("Please complete the contact form.");
         event.preventDefault();
     } else {

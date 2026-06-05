@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,7 @@
       <div class="dropdown-content">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#registration">Registration</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="registration.html">Registration</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -32,18 +32,19 @@
   <section class="hero" id="home">
     <div class="text">
       <h2>Hello, I’m <span>Samukelo Ngubane</span></h2>
-      <h3>Software Developer, Programmer, Network Administrator</h3>
+      <h3>Software Developer, System Analyst and Designer, Data Science and Machine Learning enthusiast</h3>
       <p>
         I enjoy designing and developing modern digital experiences.
-        My focus is on clean code, user-friendly design, and exploring
+        My focus is on Java, C#, Database, HTML/CSS design, and exploring
         new ways to bring ideas to life with technology.
         I believe in creativity, collaboration, and continuous learning.
       </p>
       <div class="socials">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/samukelo-ngubane-0b5b5b1b0/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/samukelo942?tab=repositories"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/samukelo942"><i class="fab fa-twitter"></i></a>
       </div>
+      <a href="https://wa.me/0607817077?text=Hello%20Samukelo%20Ngubane" target="_blank" rel="noopener" class="chat-button" style="display:inline-block;margin-top:12px;background:#25D366;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:600;">Chat with me</a>
     </div>
     <div class="photo">
       <img src="WhatsApp Image 2025-09-09 at 22.59.51_0bf247d4.jpg"
@@ -56,46 +57,29 @@
     <h2>About Me</h2>
     <p>
       My name is <strong>Samukelo Ngubane</strong>, from Greytown (Entembisweni).
-      I started school at Ntembisweni Primary and continued at <strong>Candabuthule High School</strong> now I am currently
+      I attended Ntembisweni Primary and continued at <strong>Candabuthule High School</strong> now I am currently
       an ICT student at <strong>Mangosuthu University of Technology</strong>, specializing in
       Software Development.
     </p>
-  </section>
-
-  <!-- Registration Section -->
-  <section class="section" id="registration">
-    <h2>Registration</h2>
-    <form class="form">
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" placeholder="Enter a password" required>
-
-      <button type="submit">Register</button>
-    </form>
   </section>
 
   <!-- Contact Section -->
   <section class="section" id="contact">
     <h2>Contact Me</h2>
     <form class="form">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name and surname if you like" required>
 
       <label for="email">Your Email:</label>
       <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+      <label for="Github ">GitHub Profile:</label>
+      <input type="url" id="Github " name="Github " placeholder="Enter your GitHub profile URL" required>
 
       <button type="submit">Send Message</button>
     </form>
   </section>
-<script src="script.js"></script>
+
 </body>
 </html>
 
