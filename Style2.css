@@ -27,10 +27,10 @@ body.dark-mode {
     color-scheme: dark;
     --bg: #020617;
     --surface: #111827;
-    --text: #f8fafc;
-    --muted: #cbd5e1;
+    --text: #ffffff;
+    --muted: #e5e7eb;
     --header-bg: #020617;
-    --header-text: #f8fafc;
+    --header-text: #ffffff;
     --border: rgba(148, 163, 184, 0.32);
     --button-bg: #14b8a6;
     --button-text: #020617;
@@ -98,17 +98,6 @@ header h1 {
     color: var(--button-text);
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background: var(--surface);
-    min-width: 200px;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid var(--border);
-}
-
 /* DROPDOWN */
 .dropdown {
     position: relative;
@@ -124,17 +113,24 @@ header h1 {
     font-size: 15px;
     border-radius: 8px;
     cursor: pointer;
+    outline: none;
+}
+
+.dropbtn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.35);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
+    top: calc(100% + 8px);
     right: 0;
     background: var(--surface);
     min-width: 170px;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid var(--border);
+    z-index: 1001;
 }
 
 .dropdown-content a {
@@ -456,19 +452,19 @@ footer.section {
 .hero .text h3 {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #0f172a;
+    color: var(--text);
 }
 
 .hero .text p {
     font-size: 16px;
     margin-bottom: 25px;
     max-width: 500px;
-    color: #0f172a;
+    color: var(--text);
 }
 
 .hero .socials a {
     margin-right: 15px;
-    color: #0f172a;
+    color: var(--text);
     font-size: 20px;
     transition: color 0.3s;
 }
@@ -503,27 +499,27 @@ main {
 }
 
 .project-card {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
     padding: 26px;
     border-radius: 18px;
-    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 12px 30px var(--shadow);
 }
 
 .project-card h3 {
     font-size: 22px;
     margin-bottom: 12px;
-    color: #0f172a;
+    color: var(--text);
 }
 
 .project-card p {
-    color: #334155;
+    color: var(--muted);
     margin-bottom: 14px;
 }
 
 .project-card ul {
     list-style: disc inside;
-    color: #334155;
+    color: var(--muted);
     gap: 8px;
     display: grid;
 }
@@ -549,8 +545,8 @@ main {
 }
 
 .gallery figure {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
     border-radius: 18px;
     overflow: hidden;
 }
@@ -563,11 +559,11 @@ main {
 
 .gallery figcaption {
     padding: 14px 16px;
-    color: #334155;
+    color: var(--muted);
     font-size: 14px;
 }
 
 footer.section {
     text-align: center;
-    color: #334155;
+    color: var(--muted);
 }
