@@ -8,24 +8,30 @@
 /* GLOBAL */
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #0f172a;
-    color: #e5e7eb;
-    line-height: 1.7;
+    background-color: #f8fafc;
+    color: #0f172a;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+p {
+    color: #0f172a;
 }
 
 /* HEADER */
 header {
-    background: #020617;
+    background: #ffffff;
     padding: 20px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     text-align: center;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 header h1 {
-    color: #14b8a6;
+    color: #0f172a;
     font-size: 22px;
     margin-bottom: 10px;
 }
@@ -38,8 +44,8 @@ header h1 {
 }
 
 .dropbtn {
-    background: #14b8a6;
-    color: #020617;
+    background: #0f172a;
+    color: #f8fafc;
     padding: 10px 20px;
     border: none;
     font-size: 15px;
@@ -51,22 +57,23 @@ header h1 {
     display: none;
     position: absolute;
     right: 0;
-    background: #020617;
+    background: #ffffff;
     min-width: 170px;
     border-radius: 8px;
     overflow: hidden;
+    border: 1px solid #e2e8f0;
 }
 
 .dropdown-content a {
     display: block;
     padding: 12px 15px;
-    color: #e5e7eb;
+    color: #0f172a;
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background: #14b8a6;
-    color: #020617;
+    background: #0f172a;
+    color: #f8fafc;
 }
 
 .dropdown:hover .dropdown-content {
@@ -83,8 +90,10 @@ header h1 {
 }
 
 .hero h2 {
-    font-size: 36px;
+    font-size: 42px;
     margin-bottom: 10px;
+    color: #0f172a;
+    line-height: 1.1;
 }
 
 .hero h2 span {
@@ -92,23 +101,25 @@ header h1 {
 }
 
 .hero h3 {
-    color: #94a3b8;
+    color: #0f172a;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .hero p {
     max-width: 520px;
-    color: #cbd5e1;
+    color: #0f172a;
+    font-size: 17px;
 }
 
 .socials a {
     margin-right: 15px;
     font-size: 22px;
-    color: #94a3b8;
+    color: #0f172a;
 }
 
 .socials a:hover {
-    color: #14b8a6;
+    color: #0f172a;
 }
 
 /* PHOTO */
@@ -123,44 +134,59 @@ header h1 {
 /* SECTIONS */
 .section {
     padding:50px 10%;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    margin: 40px 0;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
 }
 
 .section h2 {
     font-size: 30px;
-    color: #14b8a6;
+    color: #0f172a;
     margin-bottom: 20px;
+}
+
+.section p,
+.project-card p,
+.project-card li,
+.gallery figcaption,
+footer p {
+    color: #334155;
 }
 
 /* FORMS */
 .form {
     max-width: 420px;
-    background: #020617;
+    background: #f8fafc;
     padding: 30px;
     border-radius: 12px;
+    border: 1px solid #e2e8f0;
 }
 
 .form label {
     display: block;
     margin-bottom: 6px;
     font-weight: 500;
-    color: #94a3b8;
+    color: #0f172a;
 }
 
 .form input,
 .form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     border-radius: 8px;
-    border: none;
-    background: #0f172a;
-    color: #e5e7eb;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #0f172a;
     margin-bottom: 18px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .form input:focus,
 .form textarea:focus {
     outline: 2px solid #14b8a6;
+    border-color: #14b8a6;
 }
 
 /* BUTTON */
@@ -203,19 +229,19 @@ header h1 {
 .hero .text h3 {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #94a3b8;
+    color: #0f172a;
 }
 
 .hero .text p {
     font-size: 16px;
     margin-bottom: 25px;
     max-width: 500px;
-    color: #e2e8f0;
+    color: #0f172a;
 }
 
 .hero .socials a {
     margin-right: 15px;
-    color: #cbd5e1;
+    color: #0f172a;
     font-size: 20px;
     transition: color 0.3s;
 }
@@ -236,7 +262,7 @@ header h1 {
     border-radius: 50%;
     border: 6px solid #14b8a6;
     object-fit: cover;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 main {
@@ -250,26 +276,27 @@ main {
 }
 
 .project-card {
-    background: #020617;
-    border: 1px solid rgba(20, 184, 166, 0.18);
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
     padding: 26px;
     border-radius: 18px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
 }
 
 .project-card h3 {
     font-size: 22px;
     margin-bottom: 12px;
+    color: #0f172a;
 }
 
 .project-card p {
-    color: #cbd5e1;
+    color: #334155;
     margin-bottom: 14px;
 }
 
 .project-card ul {
     list-style: disc inside;
-    color: #94a3b8;
+    color: #334155;
     gap: 8px;
     display: grid;
 }
@@ -285,7 +312,7 @@ main {
     max-width: 900px;
     border-radius: 18px;
     border: 1px solid rgba(148, 163, 184, 0.18);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
 }
 
 .gallery {
@@ -295,8 +322,8 @@ main {
 }
 
 .gallery figure {
-    background: #020617;
-    border: 1px solid rgba(14, 165, 233, 0.14);
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
     border-radius: 18px;
     overflow: hidden;
 }
@@ -309,11 +336,11 @@ main {
 
 .gallery figcaption {
     padding: 14px 16px;
-    color: #cbd5e1;
+    color: #334155;
     font-size: 14px;
 }
 
 footer.section {
     text-align: center;
-    color: #94a3b8;
+    color: #334155;
 }
