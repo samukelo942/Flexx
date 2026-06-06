@@ -145,16 +145,21 @@ header h1 {
     color: var(--button-text);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropbtn:focus-visible + .dropdown-content {
     display: block;
 }
 
 /* HERO */
 .hero {
     display: flex;
-    gap: 50px;
-    padding: 140px 10% 80px;
-    min-height: 100vh;
+    gap: 36px;
+    padding: 110px 10% 60px;
+    min-height: 80vh;
     align-items: center;
 }
 
@@ -202,12 +207,46 @@ header h1 {
 
 /* SECTIONS */
 .section {
-    padding: 50px 10%;
+    padding: 40px 8%;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 18px;
-    margin: 40px 0;
+    margin: 28px 0;
     box-shadow: 0 12px 30px var(--shadow);
+}
+
+.api-card {
+    background: #0f172a;
+    color: #f8fafc;
+    padding: 24px;
+    border-radius: 18px;
+    max-width: 760px;
+    margin-top: 16px;
+    box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12);
+}
+
+.api-card p {
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+.api-card #api-author {
+    font-style: italic;
+    color: #94a3b8;
+}
+
+.api-card button {
+    background: #14b8a6;
+    color: #020617;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.api-card button:hover {
+    background: #2dd4bf;
 }
 
 .section h2 {
@@ -494,7 +533,7 @@ main {
 
 .project-grid {
     display: grid;
-    gap: 24px;
+    gap: 18px;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
@@ -540,7 +579,7 @@ main {
 
 .gallery {
     display: grid;
-    gap: 20px;
+    gap: 16px;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
