@@ -78,23 +78,46 @@
     </p>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section" id="contact">
-    <h2>Contact Me</h2>
-    <form class="form">
-      <label for="name">Enter your name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name and surname if you like" required>
+<form id="contactForm">
 
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <label for="name">Your Name:</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+    >
 
-      <label for="Github ">GitHub Profile:</label>
-      <input type="url" id="Github " name="Github " placeholder="Enter your GitHub profile URL" required>
+    <label for="email">Your Email:</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+    >
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <label for="github">GitHub Profile (Optional):</label>
+    <input
+        type="url"
+        id="github"
+        name="github"
+        placeholder="https://github.com/yourusername"
+    >
 
+    <label for="message">Message:</label>
+    <textarea
+        id="message"
+        name="message"
+        rows="5"
+        placeholder="Write your message..."
+        required
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+
+</form>
 </body>
 </html>
 
